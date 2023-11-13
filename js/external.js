@@ -1,30 +1,25 @@
 console.log("Hello from external JavaScript");
+
 alert('Welcome to my Website!');
-let userInput = prompt('User, what is your favorite color?');
-console.log(`${userInput} is also my favorite color! How did you know?`);
 
-const littleMermaidDays = prompt("Enter the number of days for The Little Mermaid rental:");
-const brotherBearDays = prompt("Enter the number of days for Brother Bear rental:");
-const herculesDays = prompt("Enter the number of days for Hercules rental:");
-const movieRentalPricePerDay = prompt("Enter the price per day for movie rental:");
-const totalRentalCost =
-    littleMermaidDays * movieRentalPricePerDay +
-    brotherBearDays * movieRentalPricePerDay +
-    herculesDays * movieRentalPricePerDay;
-alert("Total movie rental cost: $" + totalRentalCost);
+let userColor = prompt("What is your favorite color?");
 
-const googleHourlyRate = prompt("Enter the hourly rate for Google:");
-const amazonHourlyRate = prompt("Enter the hourly rate for Amazon:");
-const facebookHourlyRate = prompt("Enter the hourly rate for Facebook:");
+alert(`Great! ${userColor} is my favorite color too!`);
 
-const googleHoursWorked = prompt("Enter the number of hours worked for Google:");
-const amazonHoursWorked = prompt("Enter the number of hours worked for Amazon:");
-const facebookHoursWorked = prompt("Enter the number of hours worked for Facebook:");
+let littleMermaidDaysRented = Number(prompt("How many days did you rent The Little Mermaid?"));
+let brotherBearDaysRented = Number(prompt("How many days did you rent Brother Bear?"));
+let herculesDaysRented = Number(prompt("How many days did you rent Hercules?"));
+let rentalRate = prompt("How much per day to rent a movie?");
+let totalRentalAmount = (littleMermaidDaysRented + brotherBearDaysRented + herculesDaysRented) * rentalRate;
+alert(`You spent $${totalRentalAmount.toFixed(2)} on rental movies this week`);
 
-const totalPayment =
-    googleHoursWorked * googleHourlyRate +
-    amazonHoursWorked * amazonHourlyRate +
-    facebookHoursWorked * facebookHourlyRate;
 
-alert("Total payment for the week: $" + totalPayment);
+let googleHoursWorked = Number(prompt("How many hours did you work for Google?"));
+let facebookHoursWorked = Number(prompt("How many hours did you work for Facebook?"));
+let amazonHoursWorked = Number(prompt("How many hours did you work for Amazon?"));
+let googleHourlyRate = Number(prompt("What is the Google hourly rate?"));
+let facebookHourlyRate = Number(prompt("What is the Facebook hourly rate?"));
+let amazonHourlyRate = Number(prompt("What is the Amazon hourly rate?"));
+let totalAmountPaid = googleHoursWorked * googleHourlyRate + facebookHoursWorked * facebookHourlyRate + amazonHoursWorked * amazonHourlyRate;
 
+alert(`You were paid $${totalAmountPaid} this week, congrats!`);
