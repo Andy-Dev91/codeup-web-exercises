@@ -79,9 +79,9 @@ console.log(isTwo(random));
 function calculateTip(tipPercentage, billTotal) {
     return ((tipPercentage /100) * billTotal).toFixed(2);
 }
-console.log(calculateTip(0.20, 20))
-console.log(calculateTip(0.25, 25.50))
-console.log(calculateTip(0.15, 33.42))
+console.log(calculateTip(20, 20))
+console.log(calculateTip(25, 25.50))
+console.log(calculateTip(15, 33.42))
 
 /**
  * TODO:
