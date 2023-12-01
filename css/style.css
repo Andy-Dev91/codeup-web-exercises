@@ -1,3 +1,38 @@
-.fancy-header {
+h1 {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: blue;
+    text-decoration: underline;
+}
+body {
+    background-color: lightgrey;
+}
+body {
+    background-image: url('../img/pexels-cottonbro-studio-6153738.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+ul {
+    list-style-type: square;
+}
+body {
+    font-family: 'Roboto', sans-serif; /* replace 'Roboto' with your preferred Google font */
+}
+table, td, tr {
+    padding: 10px;
+    font-size: 18px;
+}
+a:link {
+    color: green;
+}
+a:visited {
     color: purple;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: yellow;
 }
