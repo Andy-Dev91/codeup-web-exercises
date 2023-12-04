@@ -11,52 +11,49 @@ body, html {
 }
 
 form {
-    margin: 1em;/* This form should be separated from other elements by 1em */
-    padding: 1em;/* There must be 1em between the content and the border of this element */
+    margin: 1em;
+    padding: 1em;
 }
 
 fieldset {
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    padding: 1em;/* There must be 1em between the content and the border of this element */
-    border: none;/* It should have no border */
-    background-color: white; /* Its background should be white */
+    padding: 1em;
+    border: none;
+    background-color: white;
 }
 
 .width-80 {
-    width: 80%;/* The element with this class should be 80% of the width and it must be centered */
-    margin: 0 auto;/* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
+    width: 80%;
+    margin: 0 auto;
 }
 
 .form-group {
-    width: 100%;/* This element must use 100% of the width */
-    margin: .5em 0;/* It should have a separation of .5em from elements on top of it and below it*/
+    width: 100%;
+    margin: .5em 0;
 }
 
 .form-label {
-   font-weight: bold; /* The text of a label must be bold */
+   font-weight: bold;
 }
 
 .btn-block {
-    width: 100%; /* This element should use 100% of the width */
+    width: 100%;
 }
 
 .btn {
-    padding: 8px;/* There must be a separation of 8px between the text and the border of this element */
-    color: white;/* The text color of this element should be white and bold */
-    font-weight: bold;/* The border of this element should be 1px, and its color should be light grey */
-    border: 1px solid lightgrey;/* The background color of this element should be #0fb784 */
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid lightgrey;
     background-color: #0fb784;
 }
 
 .form-control {
-    padding: 4px 0;/* There must be 4px on top of the text and below the text of an input with this class */
-    margin: .5em 0;/* It should have a separation of .5em from elements on top of it and below it */
-
-    width: calc(100% - 2 * (1px + 8px));/* You'll need to use the `calc` function to make the width of this element match the width of the button */
-    /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
-    /* HINT: Examples are available at: https://glitch.com/~input-button-width */
+    padding: 4px 0;
+    margin: .5em 0;
+    width: calc(100% - 5px);
 }
 
 
