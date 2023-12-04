@@ -19,13 +19,13 @@ fieldset {
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    padding 1em;/* There must be 1em between the content and the border of this element */
+    padding: 1em;/* There must be 1em between the content and the border of this element */
     border: none;/* It should have no border */
     background-color: white; /* Its background should be white */
 }
 
 .width-80 {
-    width 80%/* The element with this class should be 80% of the width and it must be centered */
+    width: 80%;/* The element with this class should be 80% of the width and it must be centered */
     margin: 0 auto;/* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
 }
 
