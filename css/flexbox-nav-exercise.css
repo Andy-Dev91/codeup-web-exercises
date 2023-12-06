@@ -1,0 +1,30 @@
+body {
+    font-family: "Work Sans", serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: darkgrey;
+    height: 4.25em;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+    align-items: center;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #3B94D9;
+}
+nav li{
+    margin: .5em;
+}
+li:nth-child(6) {
+    margin-left: auto;
+}

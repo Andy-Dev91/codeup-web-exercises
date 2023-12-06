@@ -1,0 +1,104 @@
+/* All your custom styles for this site go here */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.page-wrapper {
+    background-color: #D9D9D9;
+}
+.container.login {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 45px 25px;
+    width: calc(100% - 40px);
+    max-width: 530px;
+    box-shadow: 0px 0px 104px -40px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    position: relative;
+}
+
+.container.login h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+input {
+    min-height: 55px;
+    border: 1px solid #DDDFE1;
+    padding: 0px 10px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:placeholder {
+    color: #ABAFB3;
+}
+
+label.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label.input-group span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+label.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label.checkbox span {
+    font-size: 13px;
+    color: #ABAFB3;
+}
+
+a.link {
+    font-size: 13px;
+}
+
+button.btn {
+    min-height: 55px;
+    border: none;
+    border-radius: 99px;
+    background-color: #AA04F9;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.btn.btn-login {
+    align-self: center;
+    flex: 0 1 auto;
+    min-width: 250px;
+}
+.page-wrapper>img {
+    position: absolute;
+}
+img[src='img/footer-wave-top.svg']
+img[src='img/footer-wave-bottom.svg'] {
+    width: 100%;
+    bottom: 0;
+}
+img[src='img/dots-1.svg'] {
+    left: 150px
+}
+img[src='img/dots-2.svg'] {
+    right: 150px
+}
+img[src='wavy-lines-1.svg'] {
+    left: 20px;
+    top:160px;
+}
+img[src='wavy-lines-2.svg'] {
+    right: 20px;
+    top: 160px;
+}
+
+.container>button {
+    position: absolute;
+    top: 0%;
+    right: 0px;
+}
