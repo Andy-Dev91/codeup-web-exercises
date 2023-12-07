@@ -2,9 +2,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .page-wrapper {
     background-color: #D9D9D9;
 }
+
 .container.login {
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -29,7 +31,7 @@ input {
     font-size: 15px;
 }
 
-input:placeholder {
+input::placeholder {
     color: #ABAFB3;
 }
 
@@ -74,31 +76,45 @@ button.btn.btn-login {
     flex: 0 1 auto;
     min-width: 250px;
 }
-.page-wrapper>img {
+
+.page-wrapper > img {
     position: absolute;
 }
-img[src='img/footer-wave-top.svg']
-img[src='img/footer-wave-bottom.svg'] {
-    width: 100%;
+
+img[src='images/footer-wave-bottom.svg'],
+img[src='images/footer-wave-top.svg'] {
     bottom: 0;
+    width: 100%;
 }
-img[src='img/dots-1.svg'] {
-    left: 150px
+
+img[src*='dots-1'] {
+    left: 150px;
 }
-img[src='img/dots-2.svg'] {
-    right: 150px
+
+img[src*='dots-2'] {
+    top: 15px;
+    right: 70px;
 }
-img[src='wavy-lines-1.svg'] {
+
+img[src*='wavy-lines-1'] {
     left: 20px;
-    top:160px;
-}
-img[src='wavy-lines-2.svg'] {
-    right: 20px;
     top: 160px;
+}
+
+img[src*='wavy-lines-2'] {
+    right: 20px;
+    top: 400px;
 }
 
 .container>button {
     position: absolute;
-    top: 0%;
-    right: 0px;
+    top: -10px;
+    right: -10px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 0;
+    /* used https://www.cssmatic.com/box-shadow */
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
 }

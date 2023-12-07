@@ -14,11 +14,6 @@
 .page-wrapper.align-center {
     align-items: center;
 }
-.background-svg {
-    position: absolute;
-    z-index: -2;
-}
-
 
 /*
     The "container", sometimes referred to as a "section", is a container
