@@ -1,0 +1,5 @@
+.jumbotron {
+    background-image: url('path-to-your-image.jpg');
+    height: 346px;
+    background-size: cover;
+}
