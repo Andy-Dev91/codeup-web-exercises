@@ -37,13 +37,12 @@
 #toggle-btn:hover {
     background-color: #0056b3;
 }
-/* CSS for new-description class */
-.new-description {
-    color: red; /* Change color as desired */
-    font-family: Arial, sans-serif; /* Change font-family as desired */
+
+.desc-text-style {
+    font-family: 'Fantasy', sans-serif;
+    color: #0fb784;
 }
 
-/* CSS for alternate-bg class */
-.alternate-bg {
-    background-color: lightgray; /* Change background color as desired */
+.pink-bg {
+    background-color: hotpink;
 }

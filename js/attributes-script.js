@@ -1,20 +1,42 @@
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        document.getElementById("profile-pic").src = "img/codeup-duck.png"; // Change the profile picture src
-    }, 2000); // Change picture after 2 seconds
+console.log('Inside attributes-script.js');
 
-    setTimeout(function() {
-        document.getElementById("profile-name").innerHTML = "Jane Doe"; // Change the profile name
-    }, 4000); // Change name after 4 seconds
+// Global Variables
+const profilePicImg = document.querySelector('#profile-pic');
+const profileNameH2 = document.querySelector('#profile-name');
+const profileDescP = document.querySelector('#profile-desc');
+const profileCardDiv = document.querySelector('#profile-card');
 
-    setTimeout(function() {
-        document.getElementById("profile-desc").classList.add("new-description"); // Add a class to change description style
-    }, 6000); // Change description style after 6 seconds
 
-    let toggle = true;
-    setInterval(function() {
-        const profileCard = document.getElementById("profile-card");
-        toggle ? profileCard.classList.add("alternate-bg") : profileCard.classList.remove("alternate-bg");
-        toggle = !toggle;
-    }, 2000); // Toggle background every 2 seconds
-});
+// Functions
+function changeProfilePicSrc() {
+    const profilePicTimeoutId = setTimeout(() => {
+        profilePicImg.setAttribute('src', 'img/codeup-duck.png');
+    }, 2000);
+}
+function changeProfileName() {
+    const profileNameTimeoutId = setTimeout(() => {
+        profileNameH2.innerHTML = 'Randy James';
+    }, 4000);
+}
+function changeProfileDesc() {
+    const profileDescTimeoutId = setTimeout(() => {
+        profileDescP.classList.add('desc-text-style');
+    }, 6000);
+}
+function changeCardBgColor() {
+    const profileCardIntervalId = setInterval(() => {
+        profileCardDiv.classList.toggle('pink-bg');
+    }, 2000);
+}
+
+
+// Events
+
+
+// On Load
+window.onload = () => {
+    changeProfilePicSrc();
+    changeProfileName();
+    changeProfileDesc();
+    changeCardBgColor();
+}
