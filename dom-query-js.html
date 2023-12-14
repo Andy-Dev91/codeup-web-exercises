@@ -24,39 +24,40 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+
+<button id="btn1">Change Main Header</button>
+<button id="btn2">Change Sub Header Color</button>
+<button id="btn3">Change List Items Color</button>
+<button id="btn4">Change First Sub Paragraph</button>
+
 <script>
     "use strict";
-    // TODO: Uncomment next line and get the main header element by id
-    const mainHeader = document.querySelector('#main-header');
 
-    // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-    mainHeader.innerHTML = "JavaScript is Cool";
+    document.querySelector('#btn1').addEventListener('click', function() {
+        const mainHeader = document.querySelector('#main-header');
+        mainHeader.innerHTML = "JavaScript is Cool";
+    });
 
-    // TODO: Uncomment the next line and get the sub header element by id
-    const subHeader = document.querySelector('#sub-header');
+    document.querySelector('#btn2').addEventListener('click', function() {
+        const subHeader = document.querySelector('#sub-header');
+        subHeader.style.color = "blue";
+    });
 
-    // TODO: Set the text color of subHeader to blue
-    subHeader.style.color = "blue";
-
-    // TODO: Uncomment the next line and get all list items
-    const listItems = document.querySelectorAll('#li');
-
-    // TODO: Set text color on every other list item to grey
-    for (let i = 0; i < listItems.length; i++) {
-        if (i % 2 === 0) {
-            listItems[i].style.color = "lightgrey";
+    document.querySelector('#btn3').addEventListener('click', function() {
+        const listItems = document.querySelectorAll('li');
+        for (let i = 0; i < listItems.length; i++) {
+            if (i % 2 === 0) {
+                listItems[i].style.color = "lightgrey";
+            }
         }
-    }
+        const textColor = document.querySelector('[data-dbid="1"]');
+        textColor.style.color = "blue";
+    });
 
-    // TODO: Set text color of li with dbid = 1 to blue
-    const textColor = document.querySelector('[data-dbid="1"]');
-    textColor.style.color = "blue";
-
-    // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-    const subParagraphs = document.querySelectorAll('.sub-paragraph');
-
-    // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-    subParagraphs[0].innerHTML = "Mission Accomplished!";
+    document.querySelector('#btn4').addEventListener('click', function() {
+        const subParagraphs = document.querySelectorAll('.sub-paragraph');
+        subParagraphs[0].innerHTML = "Mission Accomplished!";
+    });
 </script>
 </body>
 </html>
